@@ -1,0 +1,21 @@
+# Configuración privada
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Backend y dependencias
+backend-lxl/
+node_modules/
+
+# Respaldos y temporales
+backup-*/
+backup-legales-*/
+*-PREPUBLICACION.zip
+*.log
+*.tmp
+
+# Archivos locales
+.DS_Store
+Thumbs.db
