@@ -1,0 +1,450 @@
+{
+  "items": [
+    {
+      "id": "mount",
+      "name": "Montaje sencillo de imágenes",
+      "bundle": 10000,
+      "extra": 3500,
+      "desc": "Colocar o ajustar imágenes dentro de una sección ya diseñada.",
+      "inc": "Hasta cinco imágenes con ajustes sencillos de tamaño, encuadre y ubicación.",
+      "exc": "Fotografía profesional, retoque complejo o creación de una campaña.",
+      "reason": "Se cobra por preparar y acomodar cada recurso para que se vea bien en la página."
+    },
+    {
+      "id": "ai",
+      "name": "Imagen original sencilla con IA",
+      "bundle": 10000,
+      "extra": 3500,
+      "desc": "Crear imágenes demostrativas a partir de una descripción.",
+      "inc": "De una a cinco imágenes de concepto sencillo, con un ajuste básico por imagen.",
+      "exc": "Derechos sobre marcas ajenas, sesiones fotográficas o revisiones ilimitadas.",
+      "reason": "Incluye preparación de instrucciones, generación, selección y ajuste básico."
+    },
+    {
+      "id": "buttons",
+      "name": "Botones visuales con enlace",
+      "bundle": 10000,
+      "extra": 3500,
+      "desc": "Botones que llevan a otra sección, página o enlace.",
+      "inc": "De uno a cinco botones con apariencia acorde al diseño y enlaces proporcionados.",
+      "exc": "Procesar pagos, guardar pedidos o ejecutar funciones complejas.",
+      "reason": "Se cobra por su diseño, ubicación, adaptación al móvil y comprobación del enlace."
+    },
+    {
+      "id": "section",
+      "name": "Sección visual adicional",
+      "unit": 15000,
+      "desc": "Un bloque nuevo dentro de una página, como preguntas frecuentes o una galería.",
+      "inc": "Estructura y estilos de una sección sencilla. El uso de recursos previamente contratados no cambia la tarifa base de esta sección; los elementos nuevos se cotizan aparte.",
+      "exc": "Imágenes o botones nuevos no contratados, lógica de servidor o secciones de complejidad especial.",
+      "reason": "Una sección requiere distribución de contenido, diseño y adaptación a diferentes pantallas."
+    },
+    {
+      "id": "pages",
+      "name": "Página estática adicional",
+      "unit": 35000,
+      "desc": "Una pantalla informativa nueva, como «Nosotros», «Servicios» o «Contacto».",
+      "inc": "Una página sencilla con texto, estructura, navegación y diseño adaptable.",
+      "exc": "Tienda completa, cuentas de usuario, administración de contenidos o múltiples funcionalidades.",
+      "reason": "Se crea una pantalla completa y se conecta a la navegación del sitio."
+    },
+    {
+      "id": "colors",
+      "name": "Ajustes de color",
+      "bundle": 10000,
+      "extra": 3500,
+      "desc": "Modificar colores de partes concretas del sitio.",
+      "inc": "Entre uno y cinco cambios puntuales de color. Desde el sexto, $3.500 cada uno.",
+      "exc": "Rediseño total de la identidad, logotipo o reconstrucción completa de componentes.",
+      "reason": "Se revisa el contraste y la consistencia para que los nuevos colores sigan siendo legibles."
+    },
+    {
+      "id": "forms",
+      "name": "Formulario básico",
+      "unit": 35000,
+      "desc": "Espacio para escribir datos, como nombre y mensaje, con comprobaciones sencillas.",
+      "inc": "Campos básicos, avisos de datos faltantes y destino ya existente y definido.",
+      "exc": "Crear servidor, almacenar datos, automatizaciones, sistemas de correo o protección avanzada.",
+      "reason": "No es solo dibujar casillas: hay que comprobar entradas y manejar errores."
+    },
+    {
+      "id": "filters",
+      "name": "Buscador o filtro local",
+      "unit": 40000,
+      "desc": "Encontrar o filtrar elementos que ya están cargados en la página.",
+      "inc": "Un buscador o filtro sencillo sobre información local existente.",
+      "exc": "Motor de búsqueda de internet, consultas a servidores o bases de datos.",
+      "reason": "Se programa la búsqueda, los resultados vacíos y la respuesta al escribir."
+    },
+    {
+      "id": "carts",
+      "name": "Carrito local",
+      "unit": 75000,
+      "desc": "Seleccionar productos y calcular un total dentro del navegador.",
+      "inc": "Agregar, quitar, cambiar cantidades y sumar productos de demostración.",
+      "exc": "Cobros reales, inventario sincronizado, facturas, cuentas o pedidos enviados.",
+      "reason": "Se programa el estado de los productos y la actualización de cantidades y totales."
+    },
+    {
+      "id": "api",
+      "name": "Conexión sencilla a API existente",
+      "unit": 100000,
+      "desc": "Mostrar o enviar información usando un servicio externo ya preparado.",
+      "inc": "Estimación mínima de una conexión sencilla, con API documentada, permisos disponibles y alcance cerrado.",
+      "exc": "Crear la API, backend, autenticación compleja, seguridad avanzada o costos del proveedor.",
+      "reason": "Se comprueba la conexión, los errores y el formato de la información. Requiere revisión técnica previa."
+    }
+  ],
+  "exclusions": {
+    "mount": [
+      {
+        "id": "mount-photo",
+        "title": "Fotografía profesional",
+        "description": "El cliente aporta fotografías o contrata fotógrafo; LXL solo incorpora archivos dentro del alcance.",
+        "owner": "Cliente / fotógrafo; LXL si integra",
+        "price": "Según proveedor; integración adicional solo si no está incluida."
+      },
+      {
+        "id": "mount-retouch",
+        "title": "Retoque complejo",
+        "description": "Composición, restauración o recorte avanzado de imágenes.",
+        "owner": "LXL o diseñador externo",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "mount-campaign",
+        "title": "Campaña visual",
+        "description": "Concepto y piezas para una campaña comercial, distinto de montar imágenes.",
+        "owner": "Cliente / LXL si se contrata",
+        "price": "Sujeto a evaluación."
+      }
+    ],
+    "ai": [
+      {
+        "id": "ai-brand",
+        "title": "Uso de marcas y derechos de terceros",
+        "description": "Requiere autorización del titular; pagar no concede derechos sobre marcas ajenas.",
+        "owner": "Cliente / titular de derechos",
+        "price": "No se oferta como compra de derechos."
+      },
+      {
+        "id": "ai-photoshoot",
+        "title": "Sesión fotográfica",
+        "description": "Fotografía real de productos o personas; servicio separado de generación IA.",
+        "owner": "Cliente / fotógrafo",
+        "price": "Según proveedor."
+      },
+      {
+        "id": "ai-revisions",
+        "title": "Revisiones extraordinarias",
+        "description": "Iteraciones que exceden el ajuste básico por imagen ya contratado.",
+        "owner": "LXL si se solicita",
+        "price": "Sujeto a evaluación; ajustes incluidos no se cobran de nuevo."
+      }
+    ],
+    "buttons": [
+      {
+        "id": "buttons-pay",
+        "title": "Botón para cobros reales",
+        "description": "Un botón visual no incluye conexión ni procesamiento de pagos.",
+        "owner": "Cliente, pasarela y LXL si integra",
+        "price": "Integración pendiente de evaluación; comisiones externas."
+      },
+      {
+        "id": "buttons-order",
+        "title": "Registro de pedidos",
+        "description": "Guardar pedidos requiere destino o integración adicional.",
+        "owner": "LXL y cliente",
+        "price": "Sujeto a evaluación; evitar duplicar otro módulo."
+      },
+      {
+        "id": "buttons-logic",
+        "title": "Lógica compleja",
+        "description": "Acciones con validaciones, reglas o backend fuera de un enlace simple.",
+        "owner": "LXL si se contrata",
+        "price": "Sujeto a evaluación."
+      }
+    ],
+    "section": [
+      {
+        "id": "section-resources",
+        "title": "Imágenes o botones nuevos",
+        "description": "Solo cobrar recursos nuevos no incluidos en otra parte del contrato.",
+        "owner": "Cliente aporta; LXL monta",
+        "price": "Tarifas existentes si aplican, evitando doble cobro."
+      },
+      {
+        "id": "section-server",
+        "title": "Lógica de servidor",
+        "description": "Procesamiento y almacenamiento fuera del bloque visual.",
+        "owner": "LXL / proveedor",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "section-complex",
+        "title": "Sección especial",
+        "description": "Animaciones o componentes avanzados fuera de sección sencilla.",
+        "owner": "LXL",
+        "price": "Sujeto a evaluación."
+      }
+    ],
+    "pages": [
+      {
+        "id": "pages-shop",
+        "title": "Tienda productiva",
+        "description": "Una página informativa no procesa compras ni pedidos por sí sola.",
+        "owner": "LXL, cliente y proveedores",
+        "price": "Requiere diagnóstico."
+      },
+      {
+        "id": "pages-accounts",
+        "title": "Cuentas de usuario",
+        "description": "Registro, acceso y permisos solo si se justifican.",
+        "owner": "LXL / cliente",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "pages-cms",
+        "title": "Administración de contenidos",
+        "description": "Panel para editar la página sin tocar código.",
+        "owner": "LXL / cliente",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "pages-features",
+        "title": "Funciones múltiples",
+        "description": "Otros módulos independientes de la nueva página estática.",
+        "owner": "LXL",
+        "price": "Según funcionalidades no contratadas."
+      }
+    ],
+    "colors": [
+      {
+        "id": "colors-rebrand",
+        "title": "Rediseño de identidad",
+        "description": "Una nueva marca o logotipo no es un ajuste puntual de color.",
+        "owner": "Cliente / diseñador / LXL",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "colors-logo",
+        "title": "Modificación de logotipo",
+        "description": "Usar y alterar el logotipo requiere autorización y alcance especial.",
+        "owner": "Cliente / titular / LXL",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "colors-rebuild",
+        "title": "Reconstrucción de componentes",
+        "description": "Cambios estructurales fuera de reemplazar colores.",
+        "owner": "LXL",
+        "price": "Sujeto a evaluación."
+      }
+    ],
+    "forms": [
+      {
+        "id": "forms-server",
+        "title": "Servidor o destino de datos",
+        "description": "Crear un servicio para recibir formularios es distinto de validar campos localmente.",
+        "owner": "LXL / proveedor",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "forms-storage",
+        "title": "Almacenamiento de datos",
+        "description": "Guardar respuestas requiere base de datos, permisos y tratamiento apropiado.",
+        "owner": "LXL y cliente",
+        "price": "Sujeto a evaluación; infraestructura externa separada."
+      },
+      {
+        "id": "forms-automation",
+        "title": "Automatizaciones",
+        "description": "Enviar respuestas a otras herramientas o disparar procesos.",
+        "owner": "LXL / proveedor",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "forms-email",
+        "title": "Envío de correo",
+        "description": "Servicio de envío y configuración técnica, según proveedor seleccionado.",
+        "owner": "Cliente / proveedor / LXL",
+        "price": "Proveedor externo separado; integración si es necesaria."
+      },
+      {
+        "id": "forms-protection",
+        "title": "Protección avanzada",
+        "description": "Controles adicionales para datos sensibles y uso productivo.",
+        "owner": "Cliente y LXL",
+        "price": "Requiere diagnóstico."
+      }
+    ],
+    "filters": [
+      {
+        "id": "filters-global",
+        "title": "Buscador de internet",
+        "description": "Una búsqueda local no indexa sitios externos.",
+        "owner": "Proveedor / LXL",
+        "price": "Requiere evaluación."
+      },
+      {
+        "id": "filters-remote",
+        "title": "Consulta a servidor",
+        "description": "Consulta de datos remotos, autenticación o paginación avanzada.",
+        "owner": "LXL / proveedor",
+        "price": "Requiere evaluación."
+      },
+      {
+        "id": "filters-database",
+        "title": "Base de datos",
+        "description": "Diseño, conexión y mantenimiento de datos persistentes.",
+        "owner": "LXL / cliente / proveedor",
+        "price": "Requiere evaluación; evitar duplicar integración API."
+      }
+    ],
+    "carts": [
+      {
+        "id": "carts-payments",
+        "title": "Cobros reales",
+        "description": "El cliente contrata una pasarela; LXL integra cuando haga falta. No confundir comisión con honorarios.",
+        "owner": "Cliente + proveedor de pagos + LXL",
+        "price": "Integración sujeto a evaluación; comisiones de terceros."
+      },
+      {
+        "id": "carts-inventory",
+        "title": "Inventario sincronizado",
+        "description": "Datos persistentes y actualización de existencias; innecesario para catálogo demostrativo.",
+        "owner": "Cliente / LXL / proveedor",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "carts-invoices",
+        "title": "Facturación electrónica",
+        "description": "Un resumen no equivale a factura fiscal; verificar requisitos y proveedor aplicables.",
+        "owner": "Cliente / proveedor autorizado / LXL",
+        "price": "Integración y proveedor sujetos a evaluación."
+      },
+      {
+        "id": "carts-accounts",
+        "title": "Cuentas de usuario",
+        "description": "Login, gestión de credenciales y permisos; no obligatorio para pedir por WhatsApp.",
+        "owner": "Cliente / LXL",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "carts-orders",
+        "title": "Envío y registro de pedidos",
+        "description": "WhatsApp, correo, base de datos o panel son soluciones distintas. Revisar módulos ya pagados.",
+        "owner": "Cliente / LXL / proveedor",
+        "price": "Sujeto a evaluación; enlace sencillo puede usar tarifa de botones."
+      }
+    ],
+    "api": [
+      {
+        "id": "api-create",
+        "title": "Creación de API personalizada",
+        "description": "Crear endpoints y reglas de negocio no está incluido en conectar una API existente.",
+        "owner": "LXL si se contrata",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "api-backend",
+        "title": "Backend personalizado",
+        "description": "Servidor y operaciones propias del negocio; no siempre es necesario.",
+        "owner": "LXL / cliente",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "api-auth",
+        "title": "Autenticación compleja",
+        "description": "Permisos, sesiones y credenciales; revisar si ya existe en la API.",
+        "owner": "LXL / proveedor",
+        "price": "Sujeto a evaluación."
+      },
+      {
+        "id": "api-security",
+        "title": "Seguridad avanzada",
+        "description": "Evaluación y controles superiores a la conexión sencilla.",
+        "owner": "LXL / cliente",
+        "price": "Sujeto a diagnóstico."
+      },
+      {
+        "id": "api-provider",
+        "title": "Costo del proveedor",
+        "description": "Licencia, consumo o suscripción externa facturada conforme al contrato del cliente.",
+        "owner": "Cliente / proveedor",
+        "price": "Tarifa externa por verificar; no es ingreso LXL."
+      }
+    ]
+  },
+  "advanced": [
+    {
+      "id": "adv-forms",
+      "title": "Recibir y guardar formularios",
+      "min": 80000,
+      "max": 150000,
+      "desc": "Recibe solicitudes y consúltalas cuando lo necesites."
+    },
+    {
+      "id": "adv-catalog",
+      "title": "Administrar productos e imágenes",
+      "min": 140000,
+      "max": 280000,
+      "desc": "Actualiza tu catálogo desde un panel."
+    },
+    {
+      "id": "adv-orders",
+      "title": "Registrar y gestionar pedidos",
+      "min": 150000,
+      "max": 300000,
+      "desc": "Organiza solicitudes de compra y sus estados."
+    },
+    {
+      "id": "adv-access",
+      "title": "Usuarios y permisos",
+      "min": 100000,
+      "max": 220000,
+      "desc": "Da acceso según el trabajo de cada persona."
+    },
+    {
+      "id": "adv-stock",
+      "title": "Inventario básico",
+      "min": 120000,
+      "max": 250000,
+      "desc": "Controla existencias con reglas acordadas."
+    },
+    {
+      "id": "adv-alerts",
+      "title": "Notificaciones y automatizaciones",
+      "min": 80000,
+      "max": 180000,
+      "desc": "Recibe avisos y automatiza tareas concretas."
+    },
+    {
+      "id": "adv-integrations",
+      "title": "Integraciones seguras",
+      "min": 100000,
+      "max": 250000,
+      "desc": "Conecta servicios que necesitan claves privadas o servidor."
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "essential",
+      "name": "Esencial estático",
+      "price": 45000,
+      "desc": "1 revisión mensual, enlaces y formulario si existe, 1 ajuste menor, reporte; máximo 30 minutos/mes, un sitio estático."
+    },
+    {
+      "id": "business",
+      "name": "Comercial administrado",
+      "price": 120000,
+      "desc": "2 revisiones al mes, hasta 3 cambios menores, revisión de integraciones y respaldo acordado; máximo 90 minutos/mes, un sitio."
+    },
+    {
+      "id": "backend",
+      "name": "Aplicación con backend",
+      "price": 280000,
+      "desc": "Desde $280.000/mes, sujeto a diagnóstico; revisión de errores, consumos, respaldos configurados y rutas críticas; hasta 3 horas/mes."
+    }
+  ]
+}
