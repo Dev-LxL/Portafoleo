@@ -123,3 +123,64 @@ button:enabled:active{scale:.97}
   .quote-review-grid,.quote-review-summary { display:block; }
 }
 .contact .contact-whatsapp{width:fit-content;max-width:100%;height:auto;min-height:48px;margin:12px 0;padding:12px 18px}
+
+/* Ajustes de pantalla móvil; escritorio e impresión conservan sus reglas. */
+.mobile-menu-toggle{display:none}
+@media screen and (max-width:768px){
+  html{scroll-padding-top:128px}
+  .topinner{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .brand-mini{font-size:.8rem;min-width:0;gap:6px}
+  .brand-glyph{width:30px;height:30px;flex-shrink:0}
+  .mobile-nav-ready .mobile-menu-toggle{display:block;min-width:64px;min-height:44px;margin-left:auto;border:1.5px solid var(--ink);border-radius:10px;background:var(--surface);color:var(--ink);font:800 .85rem 'DM Sans',Arial,sans-serif}
+  .topinner .modes{order:2;width:100%;justify-content:center}
+  .modes button{min-height:44px;flex:1;padding:8px 10px}
+  .topinner .navlinks{order:3;width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 12px}
+  .mobile-nav-ready .navlinks{display:none}
+  .mobile-nav-open .navlinks{display:grid;max-height:45dvh;overflow-y:auto;overscroll-behavior-y:contain}
+  .navlinks a{display:flex;align-items:center;min-height:44px;font-size:.8rem;padding:8px}
+  .intro-grid,.triptych,.big-blue-inner,.service-grid,.contact-grid{grid-template-columns:minmax(0,1fr)}
+  .intro .hellopanel{padding:78px 15px 15px}
+  .intro .big-hello{font-size:clamp(2rem,9vw,3.1rem)}
+  .intro .hello-card{font-size:.9rem}
+  .intro-grid .skills-bar{grid-column:auto;width:calc(100% - 20px);margin:10px;max-width:none}
+  .skill-card{flex-basis:100%}
+  .strip{min-height:0}
+  .strip h2{font-size:clamp(1.6rem,7vw,2.2rem);overflow-wrap:anywhere}
+  .big-blue-inner{min-height:0}
+  .work,.services,.quote-section{padding-top:56px;padding-bottom:56px}
+  .work-head{flex-wrap:wrap;align-items:start}
+  .display{letter-spacing:-.035em;line-height:1.05}
+  .hero-title{letter-spacing:0}
+  .hero-title span{-webkit-text-stroke-width:1px}
+  .section-title{font-size:clamp(2.5rem,11vw,4.5rem)}
+  [data-theme="dark"] .section-title,[data-theme="dark"] .service .price,[data-theme="dark"] .quote-total{color:var(--outline)}
+  .services h2,.contact h2{font-size:clamp(2.5rem,10vw,4.5rem);overflow-wrap:anywhere}
+  .service{padding:22px 18px}
+  .skill-card,.column-card,.projects>.project-card{scroll-snap-stop:normal}
+  .projects{scroll-padding-inline:4px 10px}
+  .column-controls button{width:44px;height:44px}
+  .projects .project-link{display:inline-flex;align-items:center;min-height:44px}
+  .contact a{min-height:44px;align-content:center}
+  .contact-grid>div{min-width:0}
+  .contact{padding-top:56px}
+  .contact-panel{min-height:0;padding:20px}
+  .contact-panel img{max-width:100%}
+  .footer-channels a,.footer-legal a{min-height:44px;align-content:center}
+  #cotizador > .container{width:94%}
+  #cotizador .quote-wizard{display:block;padding:20px 16px}
+  #cotizador .quote-wizard>h3:not(.print-head){margin-bottom:10px}
+  #cotizador .quote-totalbar{margin-bottom:12px;justify-content:space-between;flex-wrap:wrap}
+  #cotizador .quote-service-grid,#cotizador .quote-review-grid,#cotizador .quote-data-grid,#cotizador .quote-foldouts{grid-template-columns:minmax(0,1fr);gap:12px}
+  #cotizador .quote-data-grid>.field,#cotizador .quote-data-grid>.quote-project-field{grid-column:auto;grid-row:auto}
+  #cotizador .quote-project-field textarea{height:auto;min-height:132px}
+  #cotizador .field input,#cotizador .field select,#cotizador .field textarea{font-size:16px;min-width:0}
+  #cotizador .quote-foldouts{gap:0}
+  #cotizador .quote-step-actions .action{flex:1 1 150px;justify-content:center}
+  #cotizador .action{white-space:normal;overflow-wrap:anywhere;max-width:100%}
+  #cotizador .quote-step-nav button{min-height:48px;line-height:1.4}
+  #cotizador .quote-check{align-items:flex-start}
+  #cotizador .quote-check input{margin-top:3px}
+}
+@media screen and (max-width:720px){
+  .hero-note{position:relative;right:auto;bottom:auto;margin:24px 8px 0 auto}
+}
